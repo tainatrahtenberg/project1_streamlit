@@ -8,7 +8,7 @@ def get_weather(city):
     params = {
         'q': city,
         'appid': API_KEY,
-        'units': 'metric'  # Change to 'imperial' for Fahrenheit
+        'units': 'metric'
     }
     response = requests.get(API_URL, params=params)
     if response.status_code == 200:
